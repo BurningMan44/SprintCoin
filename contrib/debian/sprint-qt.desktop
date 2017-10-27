@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Sprint
+Comment=Sprint P2P Cryptocurrency
+Comment[fr]=Sprint, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Sprint, eşten eşe kriptografik sanal para birimi
+Exec=sprint-qt %u
+Terminal=false
+Type=Application
+Icon=sprint128
+MimeType=x-scheme-handler/sprint;
+Categories=Office;Finance;

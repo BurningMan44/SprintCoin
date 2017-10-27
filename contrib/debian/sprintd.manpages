@@ -1,0 +1,3 @@
+debian/manpages/sprintd.1
+debian/manpages/sprint.conf.5
+debian/manpages/sprint-cli.1
