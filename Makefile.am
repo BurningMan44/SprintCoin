@@ -13,9 +13,6 @@ BITCOIND_BIN=$(top_builddir)/src/sprintd$(EXEEXT)
 BITCOIN_QT_BIN=$(top_builddir)/src/qt/sprint-qt$(EXEEXT)
 BITCOIN_CLI_BIN=$(top_builddir)/src/sprint-cli$(EXEEXT)
 BITCOIN_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
-CPPFLAGS_FOR_BUILD=""
-CFLAGS_FOR_BUILD=""
-
 
 OSX_APP=Sprint-Qt.app
 OSX_DMG=Sprint-Core.dmg

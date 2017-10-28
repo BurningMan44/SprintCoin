@@ -14,3 +14,11 @@ Always verify the signatures and checksums.
 See doc/build-*.md for instructions on building sprintd,
 the intended-for-services, no-graphical-interface, reference
 implementation of Sprint.
+
+
+
+
+
+
+CPPFLAGS_FOR_BUILD must be set with '=' before using '+='
+Makefile.am:79: error: CFLAGS_FOR_BUILD must be set with '=' before using '+='
