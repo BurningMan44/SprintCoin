@@ -19,9 +19,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(DASH);
-    unitlist.append(mDASH);
-    unitlist.append(uDASH);
+    unitlist.append(SPRINT);
+    unitlist.append(mSPRINT);
+    unitlist.append(uSPRINT);
     unitlist.append(duffs);
     return unitlist;
 }
@@ -30,9 +30,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case DASH:
-    case mDASH:
-    case uDASH:
+    case SPRINT:
+    case mSPRINT:
+    case uSPRINT:
     case duffs:
         return true;
     default:
@@ -46,9 +46,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("DASH");
-            case mDASH: return QString("mDASH");
-            case uDASH: return QString::fromUtf8("μDASH");
+            case SPRINT: return QString("SPRINT");
+            case mSPRINT: return QString("mSPRINT");
+            case uSPRINT: return QString::fromUtf8("μSPRINT");
             case duffs: return QString("duffs");
             default: return QString("???");
         }
@@ -57,9 +57,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("tDASH");
-            case mDASH: return QString("mtDASH");
-            case uDASH: return QString::fromUtf8("μtDASH");
+            case SPRINT: return QString("tSPRINT");
+            case mSPRINT: return QString("mtSPRINT");
+            case uSPRINT: return QString::fromUtf8("μtSPRINT");
             case duffs: return QString("tduffs");
             default: return QString("???");
         }
@@ -72,9 +72,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("Sprint");
-            case mDASH: return QString("Milli-Sprint (1 / 1" THIN_SP_UTF8 "000)");
-            case uDASH: return QString("Micro-Sprint (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case SPRINT: return QString("Sprint");
+            case mSPRINT: return QString("Milli-Sprint (1 / 1" THIN_SP_UTF8 "000)");
+            case uSPRINT: return QString("Micro-Sprint (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case duffs: return QString("Ten Nano-Sprint (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
@@ -83,9 +83,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("TestSprints");
-            case mDASH: return QString("Milli-TestSprint (1 / 1" THIN_SP_UTF8 "000)");
-            case uDASH: return QString("Micro-TestSprint (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case SPRINT: return QString("TestSprints");
+            case mSPRINT: return QString("Milli-TestSprint (1 / 1" THIN_SP_UTF8 "000)");
+            case uSPRINT: return QString("Micro-TestSprint (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case duffs: return QString("Ten Nano-TestSprint (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
@@ -96,9 +96,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case DASH:  return 100000000;
-    case mDASH: return 100000;
-    case uDASH: return 100;
+    case SPRINT:  return 100000000;
+    case mSPRINT: return 100000;
+    case uSPRINT: return 100;
     case duffs: return 1;
     default:   return 100000000;
     }
@@ -108,9 +108,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case DASH: return 8;
-    case mDASH: return 5;
-    case uDASH: return 2;
+    case SPRINT: return 8;
+    case mSPRINT: return 5;
+    case uSPRINT: return 2;
     case duffs: return 0;
     default: return 0;
     }

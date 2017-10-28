@@ -104,7 +104,7 @@ use old versions of Upstart and do not supply the start-stop-daemon utility.
 Copy sprintd.init to /etc/init.d/sprintd. Test by running `service sprintd start`.
 
 Using this script, you can adjust the path and flags to the sprintd program by
-setting the DASHD and FLAGS environment variables in the file
+setting the SPRINTD and FLAGS environment variables in the file
 /etc/sysconfig/sprintd. You can also use the DAEMONOPTS environment variable here.
 
 4e) Mac OS X
